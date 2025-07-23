@@ -1,9 +1,5 @@
-import 'package:flutter_riverpod_clean_architecture/models/product.dart'
-    show Product;
+import 'package:flutter_riverpod_clean_architecture/models/product.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
-
-// Notifier Providers
-// use when you need to update the state & notify consumers
 
 part 'cart_provider.g.dart';
 
