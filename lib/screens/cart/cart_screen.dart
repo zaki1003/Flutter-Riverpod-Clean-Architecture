@@ -17,6 +17,8 @@ class _CartScreenState extends ConsumerState<CartScreen> {
   @override
   Widget build(BuildContext context) {
     final cartProducts = ref.watch(cartNotifierProvider);
+
+    final total = ref.watch(cartTotalProvider);
     return Scaffold(
       appBar: AppBar(title: const Text('Your Cart'), centerTitle: true),
       body: Container(
@@ -42,6 +44,8 @@ class _CartScreenState extends ConsumerState<CartScreen> {
                 }),
               ], // output cart products here
             ),
+
+            Text('Total proce - $total'),
 
             // output totals here
           ],
